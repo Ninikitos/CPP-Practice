@@ -7,7 +7,7 @@
 // Space complexity: O(1) because we don't create any variables
 // inside the loop.
 
-int main(void)
+int main()
 {
     int numbers[] = {30, 2, 99, 76, 3, 1, 134};
     int guess = 134;
