@@ -1,5 +1,8 @@
 # Binary search
 
+### Description
+In binary search, the idea of the algorithm is to divide and conquer, reducing the search area by half each time, trying to find a target element. **Array must be sorted.** 
+
 ### Time complexity 
 `O(log n)` - (where n is array length),
 because we have to divide array until element is found.
