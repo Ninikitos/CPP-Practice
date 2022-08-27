@@ -1,3 +1,5 @@
+.vs_code/
+.DS_Store/
 linear-search/linear-search
 binary-search/binary-search
 bubble-sort/bubble-sort
