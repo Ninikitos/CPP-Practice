@@ -22,4 +22,12 @@ int main()
     list.DeleteNode(1);
 
     list.PrintList();
+
+    list.AddFirstNode(77);
+
+    list.PrintList();
+
+    list.DeleteLast();
+
+    list.PrintList();
 }

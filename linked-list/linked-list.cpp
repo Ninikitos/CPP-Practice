@@ -82,8 +82,31 @@ void List::DeleteNode(int delData)
         delete delPtr;
         cout << "The value " << delData << " was deleted.\n";
     }
+}
 
-    
+void List::DeleteLast()
+{
+    nodePtr delPtr = new node;
+    temp = head;
+    curr = head;
+
+    while(curr->next != NULL)
+    {
+        temp = curr;
+        curr = curr->next;
+    }
+
+    temp->next = NULL;
+    delete curr;
+}
+
+void List::AddFirstNode(int addData)
+{
+    nodePtr n = new node;
+    temp = head;
+    head = n;
+    n->data = addData;
+    n->next = temp;
 }
 
 void List::PrintList()
@@ -94,4 +117,5 @@ void List::PrintList()
         cout << curr->data << endl;
         curr = curr->next;
     }
+    cout << endl;
 }

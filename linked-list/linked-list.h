@@ -1,3 +1,5 @@
+#pragma once
+
 class List 
 {
     private:
@@ -14,6 +16,8 @@ class List
     public:
         List();
         void AddNode(int addData);
+        void AddFirstNode(int addData);
         void DeleteNode(int delData);
+        void DeleteLast();
         void PrintList();
 };
